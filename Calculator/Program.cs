@@ -15,6 +15,7 @@ class Program
 		Console.WriteLine("2 - Substration");
 		Console.WriteLine("3 - Multiplacaton");
 		Console.WriteLine("4 - Division");
+		Console.WriteLine("5 - Exit");
 		Console.WriteLine("[----------------------------]"+Environment.NewLine);
 
 		int option = Convert.ToInt32(Console.ReadLine());
@@ -27,6 +28,9 @@ class Program
 			case 3: Multiplicacao();
 				break;
 			case 4: Divisao();
+				break;
+			case 5: Environment.Exit(0); break;;
+			default: ChamaMenu();
 				break;
 		}	
 	}
@@ -44,6 +48,7 @@ class Program
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da soma é {soma}");   
 		Console.ReadKey();
+		ChamaMenu();
 	}
 	static void Subtracao()
 	{
@@ -58,7 +63,8 @@ class Program
 
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da subtracao é {substracao}");
-		Console.ReadKey();   
+		Console.ReadKey();
+		ChamaMenu();   
 	}
 	static void Divisao()
 	{
@@ -74,6 +80,7 @@ class Program
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da divisao é {divisao}");
 		Console.ReadKey();   
+		ChamaMenu();
 	}
 	static void Multiplicacao()
 	{
@@ -89,6 +96,7 @@ class Program
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da multiplicacao é {multiplicacao}");
 		Console.ReadKey();   
+		ChamaMenu();
 	}
 
 
