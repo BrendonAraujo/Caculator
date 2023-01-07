@@ -21,6 +21,7 @@ class Program
 
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da soma é {soma}");   
+		Console.ReadKey();
 	}
 	
 	static void Subtracao()
@@ -35,7 +36,8 @@ class Program
 		float soma = primeiroValor - segundoValor;
 
 		Console.WriteLine("");
-		Console.WriteLine($"O valor da subtracao é {soma}");   
+		Console.WriteLine($"O valor da subtracao é {soma}");
+		Console.ReadKey();   
 	}
 
 
