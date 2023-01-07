@@ -6,7 +6,8 @@ class Program
 	{
 		// Soma();
 		//Subtracao();
-		Divisao();
+		// Divisao();
+		Multiplicacao();
 	}
 
 	static void Soma()
@@ -42,7 +43,7 @@ class Program
 	}
 	static void Divisao()
 	{
-		//Console.Clear();
+		Console.Clear();
 		Console.WriteLine("Primeiro Valor");
 		float primeiroValor = float.Parse(Console.ReadLine()??"0");
 
@@ -53,6 +54,21 @@ class Program
 
 		Console.WriteLine("");
 		Console.WriteLine($"O valor da divisao é {divisao}");
+		Console.ReadKey();   
+	}
+	static void Multiplicacao()
+	{
+		Console.Clear();
+		Console.WriteLine("Primeiro Valor");
+		float primeiroValor = float.Parse(Console.ReadLine()??"0");
+
+		Console.WriteLine("Segundo valor");
+		float segundoValor = float.Parse(Console.ReadLine()??"0");
+
+		float multiplicacao = primeiroValor * segundoValor;
+
+		Console.WriteLine("");
+		Console.WriteLine($"O valor da multiplicacao é {multiplicacao}");
 		Console.ReadKey();   
 	}
 
