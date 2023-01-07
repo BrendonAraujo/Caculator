@@ -4,16 +4,36 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		// Soma();
-		//Subtracao();
-		// Divisao();
-		Multiplicacao();
+		ChamaMenu();
 	}
 
+	static void ChamaMenu(){
+
+		Console.Clear();
+		Console.WriteLine("Select what do You want to do");
+		Console.WriteLine("1 - Sum");
+		Console.WriteLine("2 - Substration");
+		Console.WriteLine("3 - Multiplacaton");
+		Console.WriteLine("4 - Division");
+		Console.WriteLine("[----------------------------]"+Environment.NewLine);
+
+		int option = Convert.ToInt32(Console.ReadLine());
+		switch (option)
+		{
+			case 1: Soma();
+				break;
+			case 2: Subtracao();
+				break;
+			case 3: Multiplicacao();
+				break;
+			case 4: Divisao();
+				break;
+		}	
+	}
 	static void Soma()
 	{
 		Console.Clear();
-		Console.WriteLine("Primeiro Valor");
+		Console.WriteLine("First Value");
 		float primeiroValor = float.Parse(Console.ReadLine()??"0");
 
 		Console.WriteLine("Segundo valor");
@@ -25,11 +45,10 @@ class Program
 		Console.WriteLine($"O valor da soma é {soma}");   
 		Console.ReadKey();
 	}
-	
 	static void Subtracao()
 	{
 		Console.Clear();
-		Console.WriteLine("Primeiro Valor");
+		Console.WriteLine("First Value");
 		float primeiroValor = float.Parse(Console.ReadLine()??"0");
 
 		Console.WriteLine("Segundo valor");
@@ -44,7 +63,7 @@ class Program
 	static void Divisao()
 	{
 		Console.Clear();
-		Console.WriteLine("Primeiro Valor");
+		Console.WriteLine("First Value");
 		float primeiroValor = float.Parse(Console.ReadLine()??"0");
 
 		Console.WriteLine("Segundo valor");
@@ -59,7 +78,7 @@ class Program
 	static void Multiplicacao()
 	{
 		Console.Clear();
-		Console.WriteLine("Primeiro Valor");
+		Console.WriteLine("First Value");
 		float primeiroValor = float.Parse(Console.ReadLine()??"0");
 
 		Console.WriteLine("Segundo valor");
