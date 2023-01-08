@@ -1,2 +1,2 @@
 # Caculator
-A C# Calculator 
+This is a simple console calculator create using C# 
